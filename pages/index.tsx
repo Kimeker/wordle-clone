@@ -4,6 +4,8 @@ import Guess from '../components/Guess'
 import Querty from '../components/Qwerty'
 import PuzzleStore from '../stores/PuzzleStore'
 
+
+
 export default observer(function Home() {
   const store = useLocalObservable(() => PuzzleStore)
   useEffect(() => {

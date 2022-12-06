@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/fabric": "^4.5.14",
     "mobx": "^6.7.0",
     "mobx-react-lite": "^3.4.0",
     "next": "latest",
