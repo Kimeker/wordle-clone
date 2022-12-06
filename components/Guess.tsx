@@ -8,10 +8,17 @@ export default function Guess({ isGuessed, guess, word }) {
             ? 'bg-green-400'
             : word.includes(guess[i])
             ? 'bg-yellow-400'
-            : 'bg-black'
+            : 'bg-gray-400'
+          const textColor = !isGuessed
+          ? 'text-white'
+            : guess[i] === word[i]
+            ? 'text-black'
+            : word.includes(guess[i])
+            ? 'text-black'
+            : 'text-black'
           return (
             <div
-              className={`flex h-16 w-16 items-center justify-center border border-gray-400 font-bold uppercase text-white ${bgColor}`}
+              className={`flex h-16 w-16 items-center justify-center border border-gray-400 font-bold uppercase ${textColor} ${bgColor}`}
             >
               {guess[i]}
             </div>

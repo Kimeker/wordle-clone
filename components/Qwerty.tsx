@@ -16,7 +16,7 @@ export default observer(function Querty({ store }: any ) {
               : 'bg-gray-200'
             return (
               <div
-                className={`rounded-m m-1 flex h-10 w-10 items-center justify-center uppercase ${bgColor}`}
+                className={`rounded-m m-1 flex h-12 w-12 items-center justify-center uppercase ${bgColor}`}
               >
                 {char}
               </div>
